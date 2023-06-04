@@ -26,8 +26,8 @@
     </div>
     <div class="menu">
     <ul>
-     <li id="item1">Inicio</li> 
-     <li id="item2">Formulario</li>
+     <li>Inicio</li> 
+     <li id=>Formulario</li>
     </ul>
   
 
@@ -54,18 +54,23 @@
       
     </script>
 
-<div id="form">
-  <fieldset>
-  
+<h2 style="text-align: center;color: aliceblue; padding: 100px;">Formulario</h2>
+
+<form style="text-align: center; color: aliceblue;" id="myForm" onsubmit="return submitForm()">
   <label for="name">Nombre:</label>
-  <input type="text" id="name" placeholder="Nombre"size="40"><br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" placeholder=" Email" size="40"><br><br>
-  <label for="message">Mensaje:</label>
-  <textarea id="message" placeholder=" Mensaje"></textarea><br><br>
-  <button id="submit-button" type="reset">Enviar</button>
-  </fieldset>
-</div>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="name" style="color: aliceblue;">apellido:</label>
+  <input type="text" id="apellido" name="apellido" required><br><br>
+
+  <label for="email" style="color: aliceblue;">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<h2 style="text-align: center; color: aliceblue;" >Datos recolectados:</h2>
+<div id="gridContainer"></div>
 
 <script src="main.js"></script>
 </body>

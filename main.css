@@ -65,17 +65,18 @@ body{
     border: 1px solid black;
 }
 
-#form {
-      
-    width: 500px;
-    color: #fff;
-    background: transparent;
-    padding: 40px;
-    margin: auto;
-    margin-top: 150px;
-    border-radius: 4px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 60px;
-    border: none;
+table {
+color: #f2f2f2;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+th, td {
+    color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

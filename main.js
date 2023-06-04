@@ -6,19 +6,25 @@ btnToggle.addEventListener('click', function () {
   console.log(document.getElementById('sidebar'))
 });
 
-// Mostrar o ocultar elementos según la selección del menú lateral
-item1.addEventListener('click', function() {
-    // Mostrar botón y ocultar mensaje de bienvenida y formulario
-    boton.style.display = 'block';
-    boton.style.display = 'none';
-    form.style.display = 'none';
-    tabla.style.display = 'none';
-  });
+function submitForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var apellido = document.getElementById("apellido").value;
+
+  var table = document.createElement("table");
+  var row = table.insertRow();
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML = name;
+  cell2.innerHTML = apellido;
+  cell3.innerHTML = email;
   
- item2.addEventListener('click', function() {
-    // Ocultar botón y mensaje de bienvenida, mostrar formulario
-    welcomeButton.style.display = 'none';
-    welcomeMessage.style.display = 'none';
-    form.style.display = 'block';
-    tabla.style.display = 'block';
-  });
+
+  var gridContainer = document.getElementById("gridContainer");
+  gridContainer.appendChild(table);
+
+  document.getElementById("myForm").reset();
+
+  return false;
+}
