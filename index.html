@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral Animado</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+      #img{
+        display: none;
+      }
+
+    </style>
+  </head>
+<body>
+
+    <div id="sidebar">
+      <div class="toggle-btn">
+      <span>&#9776;</span>
+      <h1> Bienvenido</h1>
+      <div class="logo">
+         
+				
+			</div>
+    </div>
+    <div class="menu">
+    <ul>
+     <li id="item1">Inicio</li> 
+     <li id="item2">Formulario</li>
+    </ul>
+  
+
+  </div>
+    </div>
+
+    <script src="main.js" charset="UTF-8"></script>
+    <div style="text-align: center;">
+    <button id="boton" onclick="mostrar();">Mostrar Saludo</button>
+    <div id="img">
+      <button id="boton" style="text-align: center;" onclick="ocultar();">Ocultar Saludo</button>
+      <img src="img/img2.jpg" width="400PX " alt="">
+    </div>
+
+  </div>
+    <script>
+      function mostrar(){
+      document.getElementById('img').style.display = 'block';
+      }
+
+      function ocultar(){
+      document.getElementById('img').style.display = 'none';
+      }
+      
+    </script>
+
+<div id="form">
+  <fieldset>
+  
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" placeholder="Nombre"size="40"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder=" Email" size="40"><br><br>
+  <label for="message">Mensaje:</label>
+  <textarea id="message" placeholder=" Mensaje"></textarea><br><br>
+  <button id="submit-button" type="reset">Enviar</button>
+  </fieldset>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.menu{
+   list-style: none;
+   padding: 0;
+}
+
+.menu li a:hover{
+    background: #ef8354 ;
+
+}
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms ease;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    color:rgba(230, 230, 230, .9);
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+
+.logo{
+    color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+}
+    
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor:pointer;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+#form {
+      
+    width: 500px;
+    color: #fff;
+    background: transparent;
+    padding: 40px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px;
+    border: none;
+
+}
